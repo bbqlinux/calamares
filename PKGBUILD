@@ -1,8 +1,8 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dog] org>
 
 pkgname=calamares
-pkgver=3.2.0
-pkgrel=2
+pkgver=3.2.2
+pkgrel=1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -17,7 +17,7 @@ backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/unpackfs.conf')
 
 source+=("https://github.com/calamares/calamares/releases/download/v${pkgver}/calamares-${pkgver}.tar.gz")
-sha256sums=('c4587a4961a326b78b7b87ad8a716920b5de1aec51a33d538b2162e91c1cb8c4')
+sha256sums=('db04dbe4a577438ec59b61eeb7ab23421c291d86795064dc1c437d09aad81a92')
 
 prepare() {
     cd ${srcdir}/calamares-${pkgver}
